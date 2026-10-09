@@ -1,0 +1,29 @@
+# ── 二进制与构建产物：绝不入库 ──
+# 目标 Electron 本体有 200MB+，进仓库会直接把仓库撑爆
+*.exe
+*.dll
+*.node
+*.lib
+*.patched.exe
+*.patched
+
+# ── 备份与中间产物 ──
+*.bak
+*.bak-*
+*.orig
+*.orig-*
+*.tmp
+*.log
+
+# ── Python ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── 编辑器 / 系统 ──
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
